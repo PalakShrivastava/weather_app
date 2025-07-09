@@ -24,8 +24,8 @@ searchBtn.addEventListener("click", () => {
       }
 
       cityName.textContent = `${data.name}, ${data.sys.country}`;
-      temperature.textContent = `🌡️ ${data.main.temp}°C`;
-      description.textContent = `📝 ${data.weather[0].description}`;
+      temperature.textContent = ` ${data.main.temp}°C`;
+      description.textContent = ` ${data.weather[0].description}`;
       const iconCode = data.weather[0].icon;
       weatherIcon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
