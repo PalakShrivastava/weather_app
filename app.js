@@ -30,7 +30,7 @@ searchBtn.addEventListener("click", () => {
       weatherIcon.src = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
 
       weatherBox.classList.remove("hidden");
-      cityInput.value = ""; // optional: clear input
+      cityInput.value = ""; 
     })
     .catch((err) => {
       alert("Something went wrong!");
